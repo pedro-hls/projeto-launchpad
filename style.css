@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&family=Squada+One&display=swap');
+
+:root {
+    --branco1: #F0EDEE;
+    --branco2: #F0EDEE;
+    --preto: #0A090C;
+    --azul: #0094C6;
+    --azulEscuro: #0E6BA8;
+    --laranja: #E76F51;
+}
