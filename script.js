@@ -1,6 +1,10 @@
 document.body.addEventListener('keyup', playSound)
+document.body.addEventListener('touchend', playSound)
 document.body.addEventListener('keyup', press)
+document.body.addEventListener('touchend', press)
+
 document.querySelector('#question-mark').addEventListener('click', sumir)
+document.querySelector('#question-mark').addEventListener('touchend', sumir)
 
 
 function playSound(e) {
@@ -23,6 +27,7 @@ function press(e) {
     setTimeout(() => {
         document.querySelector(`div${teclaPress}`).classList.remove('press')}, 100)
 }
+
 function sumir() {
     document.querySelector('.ajuda-padrao').classList.toggle('aparecer')
 }

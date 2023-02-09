@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Squada+One&display=swap');
 
 :root {
-    --branco1: #F0EDEE;
-    --branco2: #ededee;
-    --preto: #1E1E2C;
-    --pretoClaro: #2d2d44;
+    --branco: #ededee;
+    --preto: #161e25;
+    --pretoClaro: #25313d;
     --azul2: #144272;
     --azul: #2C74B3;
     --fonte-padrao: 'Noto Sans JP', Helvetica, sans-serif;
@@ -32,7 +31,7 @@ body {
 #question-mark {
     height: 45px;
     width: 45px;
-    background-color: var(--branco2);
+    background-color: var(--branco);
     color: var(--preto);
     border-radius: 25px;
     font-size: 40px;
@@ -44,14 +43,55 @@ body {
     top: 20px;
     box-shadow: 0px 0px 25px #000000b4;
     cursor: help;
+    z-index:9999;
+    user-select: none;
+    
 }
 
+.ajuda-padrao {
+    display: none;
+    background-color: var(--branco);
+    border: 7px solid var(--pretoClaro);
+    border-radius: 25px;
+    padding: 20px;
+    list-style: none;
+    font-family: var(--fonte-padrao);
+    width: 180px;
+    padding: 25px;
+    font-size: 1em;
+    box-shadow: 0px 0px 25px #000000b4;
+    position: absolute;
+    right: 20px;
+    top: 90px; 
+}
+
+.aparecer {
+        display: block;
+        animation-name: transicao;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes transicao{
+        from {
+           transform: scale(1.1)
+        }
+     
+        to {
+           transform: scale(1)
+        }
+     }
+
 h1 {
-    color: var(--branco2);
+    color: var(--branco);
     font-family: var(--fonte-alternativa);
     text-align: center;
     font-size: 50px;
     margin-top: 20px;
+}
+
+main {
+    height: 85vh;
 }
 
 .launchpad {
@@ -69,6 +109,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
     width: 320px;
     gap: 10px;
     margin: auto;
@@ -77,7 +118,7 @@ section {
 .pad {
     width: 100px;
     height: 100px;
-    background-color: var(--branco2);
+    background-color: var(--branco);
     font-size: 80px;
     font-family: var(--fonte-alternativa);
     text-align: center;
@@ -91,40 +132,18 @@ section {
     transition-duration: 0.05s;
 }
 
-.ajuda-padrao {
-    display: none;
-    background-color: var(--branco2);
-    border: 7px solid var(--pretoClaro);
-    border-radius: 25px;
-    padding: 20px;
-    list-style: none;
-    font-family: var(--fonte-padrao);
-    width: 180px;
-    padding: 25px;
-    font-size: 1em;
-    box-shadow: 0px 0px 25px #000000b4;
-    position: absolute;
-    right: 20px;
-    top: 90px;
-}
-
 strong, i {
     font-weight: bolder;
 }
 
-.aparecer {
-    display: block;
-    animation-name: transicao;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-out;
+.author {
+    font-size: 0.7em;
+    padding-top: 15px;
+    color: var(--pretoClaro);
 }
 
-@keyframes transicao{
-    from {
-       transform: scale(1.1)
-    }
- 
-    to {
-       transform: scale(1)
-    }
- }
+.link {
+    text-decoration: none;
+    color: var(--pretoClaro);
+    cursor: zoom-in;
+}
