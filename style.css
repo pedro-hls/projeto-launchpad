@@ -3,13 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Squada+One&display=swap');
 
 :root {
+
     --branco: #ededee;
+
+/* cores tema escuro */
     --preto: #161e25;
     --pretoClaro: #25313d;
-    --azul2: #144272;
-    --azul: #2C74B3;
     --fonte-padrao: 'Noto Sans JP', Helvetica, sans-serif;
     --fonte-alternativa: 'Squada One', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+/* cores tema claro */
+    --cinza: #DEE4E7;
+    --azul: #5888b9;
 }
 
 * {
@@ -26,43 +31,95 @@ html {
 
 body {
     background-color: var(--preto);
+    transition: 0.2s linear;
 }
 
-#question-mark {
+.light-body {
+    background-color: var(--cinza);
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    padding: 15px 15px 0px 15px;
+}
+
+.title {
+    color: var(--branco);
+    font-family: var(--fonte-alternativa);
+    text-align: center;
+    font-size: 50px;
+    transition: 0.5s ease-in;
+}
+
+.light-title {
+    color: var(--preto);
+}
+
+
+.icon {
     height: 45px;
     width: 45px;
     background-color: var(--branco);
-    color: var(--preto);
+    color: var(--pretoClaro);
     border-radius: 25px;
     font-size: 40px;
     font-family: var(--fonte-alternativa);
     text-align: center;
     padding: 1px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    box-shadow: 0px 0px 25px #000000b4;
+    box-shadow: 0px 0px 10px #0000002f;
     cursor: help;
-    z-index:9999;
-    user-select: none;
-    
+    z-index: 9999;
+    user-select: none;  
+    transition: 0.5s ease-in; 
 }
 
-.ajuda-padrao {
+.small-font {
+    font-size: 30px;
+    padding-top: 7px;
+    cursor: pointer;
+    display: none;
+}
+
+.light-icon {
+    background-color: #5888b9;
+    color: var(--cinza);
+}
+
+.pop-up {
     display: none;
     background-color: var(--branco);
-    border: 7px solid var(--pretoClaro);
-    border-radius: 25px;
+    border: 4px solid var(--pretoClaro);
+    border-radius: 15px;
     padding: 20px;
     list-style: none;
     font-family: var(--fonte-padrao);
-    width: 180px;
+    width: 170px;
     padding: 25px;
     font-size: 1em;
-    box-shadow: 0px 0px 25px #000000b4;
+    box-shadow: 0px 0px 10px #0000002f;
     position: absolute;
     right: 20px;
     top: 90px; 
+}
+
+.light-pop-up {
+    border-color: var(--azul);
+}
+
+.author {
+    font-size: 0.7em;
+    padding-top: 15px;
+    color: var(--pretoClaro);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--pretoClaro);
+    cursor: zoom-in;
 }
 
 .aparecer {
@@ -82,27 +139,26 @@ body {
         }
      }
 
-h1 {
-    color: var(--branco);
-    font-family: var(--fonte-alternativa);
-    text-align: center;
-    font-size: 50px;
-    margin-top: 20px;
-}
-
 main {
     height: 85vh;
 }
 
 .launchpad {
+    color: var(--preto);
     background-color: var(--pretoClaro);
     display: flex;
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     height: 400px;
     margin: auto;
     border-radius: 10px;
     margin-top: 20px;
-    box-shadow: 0px 0px 25px #000000b4;
+    box-shadow: 0px 0px 10px #00000054;
+    transition: 0.5s ease-in;
+}
+
+.light-launchpad {
+    background-color: var(--azul);
 }
 
 section {
@@ -124,11 +180,12 @@ section {
     text-align: center;
     padding-top: 5px;
     border-radius: 20px;
+    
 }
 
 .press {
     transform: scale(1.05);
-    box-shadow: 0 0 15px #000000;
+    box-shadow: 0 0 10px #0000003d;
     transition-duration: 0.05s;
 }
 
@@ -136,14 +193,36 @@ strong, i {
     font-weight: bolder;
 }
 
-.author {
-    font-size: 0.7em;
-    padding-top: 15px;
-    color: var(--pretoClaro);
+.options {
+    width: 100px;
+    text-align: center;
+    margin: auto;
 }
 
-.link {
-    text-decoration: none;
+.types {
+    border-radius: 15px;
+    background-color: var(--branco);
+    height: 35px;
+    font-family: var(--fonte-padrao);
+    margin-top: 15px;
+    box-sizing: border-box;
+    appearance: none;
+    text-align: center;
+    border-radius: 0.25em;
+    font-size: 1rem;
+    width: 100px;
+    background-color: var(--branco);
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.light-types {
+    background-color: var(--pretoClaro);
+    color: var(--branco);
+}
+
+select option {
+    background-color: var(--branco);
     color: var(--pretoClaro);
-    cursor: zoom-in;
 }

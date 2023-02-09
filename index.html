@@ -11,11 +11,13 @@
 <body>
 
     <header>
-        <p id="question-mark" >?</p>
+        <i class="icon small-font fa-solid fa-sun theme" onclick="tema()"></i>
+        <h1 class="title"> LAUNCHPAD </h1>
+        <p class="icon help">?</p>
     </header>
 
-        <h1> LAUNCHPAD </h1>
-        <main>
+    <main>
+
             <div class = "launchpad">
                 <section>
                     <div class = "pad Q" > Q </div>
@@ -31,8 +33,21 @@
             </div>
         
 
+        <div class="options">
+
+            <select name="selecionar" class="types" onchange="trocarAudio()">
+        
+                <option value="0"> Trap </option>
+                <option value="1"> Soulja Boy </option>
+        
+            </select>
+        
+        </div>
+
     <aside>
-        <ul class="ajuda-padrao">
+
+        <ul class="ajuda-trap pop-up">
+
             <li> <strong> Q </strong> - Guitar </li>
             <li> <strong> W </strong> - Mallet </li>
             <li> <strong> E </strong> - Kick </li>
@@ -42,24 +57,41 @@
             <li> <strong> Z </strong> - Clap </li>
             <li> <strong> X </strong> - Hihat </li>
             <li> <strong> C </strong> - 808 <i>G#</i> </li>
+
             <li class="author"> por <a class="link" href="https://github.com/pedro-hls" target="_blank"> <strong> Pedro Lima </strong> </a></li>
+
+        </ul>
+
+        <ul class="ajuda-soulja pop-up">
+
+            <li> <strong> Q </strong> - Melody <i>C</i> </li>
+            <li> <strong> W </strong> - Melody <i>G</i> </li>
+            <li> <strong> E </strong> - Melody <i>G#</i> </li>
+            <li> <strong> A </strong> - Fxs </li>
+            <li> <strong> S </strong> - Perc </li>
+            <li> <strong> D </strong> - Piano </li>
+            <li> <strong> Z </strong> - YOU </li>
+            <li> <strong> X </strong> - Hihat </li>
+            <li> <strong> C </strong> - 808 </li>
+
+            <li class="author"> por <a class="link" href="https://github.com/pedro-hls" target="_blank"> <strong> Pedro Lima </strong> </a></li>
+
         </ul>
     </aside>
-
     
-    
-            <audio src="assets/sounds/1guitar.wav" id="keyQ"></audio>
-            <audio src="assets/sounds/2rhodes.wav" id="keyW"></audio>
-            <audio src="assets/sounds/3kick.wav" id="keyE"></audio>
-            <audio src="assets/sounds/4oh.wav" id="keyA"></audio>
-            <audio src="assets/sounds/5snare.wav" id="keyS"></audio>
-            <audio src="assets/sounds/6zay.wav" id="keyD"></audio>
-            <audio src="assets/sounds/8clap.wav" id="keyZ"></audio>
-            <audio src="assets/sounds/7hihat.wav" id="keyX"></audio>
-            <audio src="assets/sounds/6zay2.wav" id="keyC"></audio>
+            <audio src="assets/sounds-trap/1guitar.wav" id="keyQ"></audio>
+            <audio src="assets/sounds-trap/2rhodes.wav" id="keyW"></audio>
+            <audio src="assets/sounds-trap/3kick.wav" id="keyE"></audio>
+            <audio src="assets/sounds-trap/4oh.wav" id="keyA"></audio>
+            <audio src="assets/sounds-trap/5snare.wav" id="keyS"></audio>
+            <audio src="assets/sounds-trap/6zay.wav" id="keyD"></audio>
+            <audio src="assets/sounds-trap/8clap.wav" id="keyZ"></audio>
+            <audio src="assets/sounds-trap/7hihat.wav" id="keyX"></audio>
+            <audio src="assets/sounds-trap/6zay2.wav" id="keyC"></audio>
 
             <script src="script.js"></script>
             <script src="https://kit.fontawesome.com/a6c6a11ad0.js" crossorigin="anonymous"></script>
+
         </main>
     
 </body>
