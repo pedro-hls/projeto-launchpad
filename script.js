@@ -13,7 +13,7 @@ function playSound(e) {
     let audio = document.querySelector(`audio${tecla}`)
 
     audio.currentTime=0
-    audio.volume = 1
+    audio.volume = 0.7
     audio.play()
 }
 
