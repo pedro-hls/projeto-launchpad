@@ -1,7 +1,7 @@
-# projeto-lauchpad
+# projeto-launchpad
 
 Lauchpad com 2 variações: 
-# Trap 
-# Crank That do Soulja Boy
+*Trap*
+*Crank That do Soulja Boy*
 
-com Dark Theme e Light Theme
+Dark/Light Mode incluído
