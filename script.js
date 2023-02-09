@@ -1,7 +1,7 @@
 document.body.addEventListener('keyup', playSound)
-document.body.addEventListener('touchstar', playSound)
+document.body.addEventListener('touchstart', playSound)
 document.body.addEventListener('keyup', press)
-document.body.addEventListener('touchstar', press)
+document.body.addEventListener('touchstart', press)
 
 document.querySelector('#question-mark').addEventListener('click', sumir)
 document.querySelector('#question-mark').addEventListener('touchend', sumir)
