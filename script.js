@@ -1,5 +1,5 @@
-document.body.addEventListener('keyup', playSound)
-document.body.addEventListener('keyup', press)
+document.body.addEventListener('keydown', playSound)
+document.body.addEventListener('keydown', press)
 
 document.querySelector('.help').addEventListener('click', sumir)
 
