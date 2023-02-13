@@ -13,7 +13,7 @@ function playSound(e) {
     let audio = document.querySelector(`audio${tecla}`)
 
     audio.currentTime=0
-    audio.volume = 0.7
+    audio.volume = 0.8
     audio.play()
 }
 
@@ -79,62 +79,62 @@ function trocarAudio() {
     if (trocar.value == 1) {
         
         let keyQ = document.getElementById('keyQ')
-        keyQ.src = 'assets/sounds-soulja/1-c-melody.wav'
+        keyQ.src = 'assets/sounds-soulja/1-c-melody.ogg'
 
         let keyW = document.getElementById('keyW')
-        keyW.src = 'assets/sounds-soulja/2-g-melody.wav'
+        keyW.src = 'assets/sounds-soulja/2-g-melody.ogg'
 
         let keyE = document.getElementById('keyE')
-        keyE.src = 'assets/sounds-soulja/3-gsharp-melody.wav'
+        keyE.src = 'assets/sounds-soulja/3-gsharp-melody.ogg'
 
         let keyA = document.getElementById('keyA')
-        keyA.src = 'assets/sounds-soulja/4-fxs.wav'
+        keyA.src = 'assets/sounds-soulja/4-fxs.ogg'
 
         let keyS = document.getElementById('keyS')
-        keyS.src = 'assets/sounds-soulja/5-perc.wav'
+        keyS.src = 'assets/sounds-soulja/5-perc.ogg'
 
         let keyD = document.getElementById('keyD')
-        keyD.src = 'assets/sounds-soulja/6-you.wav'
+        keyD.src = 'assets/sounds-soulja/6-you.ogg'
 
         let keyZ = document.getElementById('keyZ')
-        keyZ.src = 'assets/sounds-soulja/7-hihat.wav'
+        keyZ.src = 'assets/sounds-soulja/7-hihat.ogg'
 
         let keyX = document.getElementById('keyX')
-        keyX.src = 'assets/sounds-soulja/8-clap.wav'
+        keyX.src = 'assets/sounds-soulja/8-clap.ogg'
 
         let keyC = document.getElementById('keyC')
-        keyC.src = 'assets/sounds-soulja/9-808.wav'
+        keyC.src = 'assets/sounds-soulja/9-808.ogg'
 
         document.querySelector('.ajuda-trap').classList.remove('aparecer')
 
     } else if (trocar.value == 0) {
 
         let keyQ = document.getElementById('keyQ')
-        keyQ.src = 'assets/sounds-trap/1guitar.wav'
+        keyQ.src = 'assets/sounds-trap/1guitar.ogg'
 
         let keyW = document.getElementById('keyW')
-        keyW.src = 'assets/sounds-trap/2rhodes.wav'
+        keyW.src = 'assets/sounds-trap/2rhodes.ogg'
 
         let keyE = document.getElementById('keyE')
-        keyE.src = 'assets/sounds-trap/3kick.wav'
+        keyE.src = 'assets/sounds-trap/3kick.ogg'
 
         let keyA = document.getElementById('keyA')
-        keyA.src = 'assets/sounds-trap/4oh.wav'
+        keyA.src = 'assets/sounds-trap/4oh.ogg'
 
         let keyS = document.getElementById('keyS')
-        keyS.src = 'assets/sounds-trap/5snare.wav'
+        keyS.src = 'assets/sounds-trap/5snare.ogg'
 
         let keyD = document.getElementById('keyD')
-        keyD.src = 'assets/sounds-trap/6zay.wav'
+        keyD.src = 'assets/sounds-trap/6zay.ogg'
 
         let keyZ = document.getElementById('keyZ')
-        keyZ.src = 'assets/sounds-trap/8clap.wav'
+        keyZ.src = 'assets/sounds-trap/8clap.ogg'
 
         let keyX = document.getElementById('keyX')
-        keyX.src = 'assets/sounds-trap/7hihat.wav'
+        keyX.src = 'assets/sounds-trap/7hihat.ogg'
 
         let keyC = document.getElementById('keyC')
-        keyC.src = 'assets/sounds-trap/6zay2.wav'
+        keyC.src = 'assets/sounds-trap/6zay2.ogg'
 
         document.querySelector('.ajuda-soulja').classList.remove('aparecer')
     }
